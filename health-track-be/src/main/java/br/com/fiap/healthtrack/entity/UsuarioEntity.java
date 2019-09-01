@@ -1,19 +1,17 @@
 package br.com.fiap.healthtrack.entity;
 
-import java.util.Calendar;
+import java.util.List;
 
 /**
  * 
  * @author raphael
  * Classe destinada a representar usuario do sistemas
  */
-public class UsuarioEntity {
+public class UsuarioEntity extends PessoaEntity {
 
 	private Long idUsuario;
-	private String nome;
-	private String sobrenome;
-	private Calendar dataNascimento;
-	
+	private LoginEntity login;
+	private List<PerfilEntity> perfis;
 	/**
 	 * 
 	 * @return (Long) idUsuario
@@ -31,51 +29,31 @@ public class UsuarioEntity {
 	}
 	
 	/**
-	 * 
-	 * @return (String) nome
+	 * @return the login
 	 */
-	public String getNome() {
-		return nome;
+	public LoginEntity getLogin() {
+		return login;
 	}
-	
+
 	/**
-	 * Altera nome do usuário
-	 * @param (String)nome
+	 * @param login the login to set
 	 */
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setLogin(LoginEntity login) {
+		this.login = login;
 	}
-	
+
 	/**
-	 * 
-	 * @return (String) sobrenome
+	 * @return the perfil
 	 */
-	public String getSobrenome() {
-		return sobrenome;
+	public List<PerfilEntity> getPerfis() {
+		return perfis;
 	}
-	
+
 	/**
-	 * Altera sobrenomenome do usuário
-	 * @param (String)sobrenomenome
+	 * @param perfil the perfil to set
 	 */
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
-	}
-	
-	/**
-	 * 
-	 * @return (Calendar) data de nascimento
-	 */
-	public Calendar getDataNascimento() {
-		return dataNascimento;
-	}
-	
-	/**
-	 * Altera dataNascimento do usuário
-	 * @param (Calendar)dataNascimento
-	 */
-	public void setDataNascimento(Calendar dataNascimento) {
-		this.dataNascimento = dataNascimento;
+	public void setPerfil(List<PerfilEntity> perfis) {
+		this.perfis = perfis;
 	}
 	
 	

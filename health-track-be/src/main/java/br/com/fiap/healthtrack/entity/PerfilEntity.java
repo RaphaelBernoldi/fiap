@@ -8,7 +8,7 @@ public class PerfilEntity {
 	private Long idPerfil;
 	private String nome;
 	private String descricao;
-	private List<Menu>menus;
+	private List<PerfilMenuEntity>perfilMenu;
 	
 	public Long getIdPerfil() {
 		return idPerfil;
@@ -28,11 +28,17 @@ public class PerfilEntity {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public List<Menu> getMenus() {
-		return menus;
+	/**
+	 * @return the perfilMenu
+	 */
+	public List<PerfilMenuEntity> getPerfilMenu() {
+		return perfilMenu;
 	}
-	public void setMenus(List<Menu> menus) {
-		this.menus = menus;
+	/**
+	 * @param perfilMenu the perfilMenu to set
+	 */
+	public void setPerfilMenu(List<PerfilMenuEntity> perfilMenu) {
+		this.perfilMenu = perfilMenu;
 	}
 	
 	

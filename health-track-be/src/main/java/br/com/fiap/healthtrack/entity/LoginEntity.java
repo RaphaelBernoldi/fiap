@@ -9,7 +9,6 @@ public class LoginEntity {
 	private String senha;
 	private Calendar ultimoAcesso;
 	private Boolean status;
-	private UsuarioEntity usuario;
 	
 	public Long getIdLogin() {
 		return idLogin;
@@ -41,12 +40,5 @@ public class LoginEntity {
 	public void setStatus(Boolean status) {
 		this.status = status;
 	}
-	public UsuarioEntity getUsuario() {
-		return usuario;
-	}
-	public void setUsuario(UsuarioEntity usuario) {
-		this.usuario = usuario;
-	}
-	
 	
 }

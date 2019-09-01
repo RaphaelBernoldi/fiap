@@ -8,7 +8,7 @@ public class MenuEntity {
 	private String label;
 	private String url;
 	private String descricao;
-	private List<PerfilEntity>perfis;
+	private List<PerfilMenuEntity>perfilMenu;
 	
 	public Long getIdMenu() {
 		return idMenu;
@@ -34,10 +34,16 @@ public class MenuEntity {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public List<PerfilEntity> getPerfis() {
-		return perfis;
+	/**
+	 * @return the perfilMenu
+	 */
+	public List<PerfilMenuEntity> getPerfilMenu() {
+		return perfilMenu;
 	}
-	public void setPerfis(List<PerfilEntity> perfis) {
-		this.perfis = perfis;
+	/**
+	 * @param perfilMenu the perfilMenu to set
+	 */
+	public void setPerfilMenu(List<PerfilMenuEntity> perfilMenu) {
+		this.perfilMenu = perfilMenu;
 	}
 }
