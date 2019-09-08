@@ -1,6 +1,10 @@
 package br.com.fiap.healthtrack.entity;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class RefeicaoSugestaoEntity {
 
@@ -28,10 +32,18 @@ public class RefeicaoSugestaoEntity {
 		this.descricao = descricao;
 	}
 	public List<IngredienteEntity> getIngredientes() {
+		if(ingredientes == null) {
+			ingredientes = new ArrayList<IngredienteEntity>();
+		}
+		
 		return ingredientes;
 	}
 	public void setIngredientes(List<IngredienteEntity> ingredientes) {
 		this.ingredientes = ingredientes;
+	}
+	@Override
+	public String toString() {
+		return ReflectionToStringBuilder.toString(this, ToStringStyle.SIMPLE_STYLE);
 	}
 	
 }

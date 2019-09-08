@@ -1,5 +1,8 @@
 package br.com.fiap.healthtrack.entity;
 
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 public class IngredienteEntity {
 
 	
@@ -26,5 +29,9 @@ public class IngredienteEntity {
 		this.caloria = caloria;
 	}
 	
+	@Override
+	public String toString() {
+		return ReflectionToStringBuilder.toString(this, ToStringStyle.SIMPLE_STYLE);
+	}
 	
 }
