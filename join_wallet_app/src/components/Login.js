@@ -12,10 +12,12 @@ const styles = StyleSheet.create({
     header: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: '#997E33'
+
     },
     content:{
-        flex: 3,
+        flex: 6,
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    logoWelcome: {
+    logo: {
         width: 200,
         height: 200,
     },
@@ -41,12 +43,19 @@ export default () => {
             </View>
             <View style={styles.content}>
                 <Image
-                    style={styles.logoWelcome}
-                    source={require('../assets/icons/artwark-guy-holding-paper.png')}></Image>
+                    style={styles.logo}
+                    source={require('../assets/icons/artwork-woman-poiting.png')}></Image>
+                <TextInput
+                    style={{ height: 40, borderColor: 'gray'}}
+                    onChangeText={text => onChangeText(text)}
+                    value={value}
+                    />
+                <TextInput
+                    style={{ height: 40, borderColor: 'gray'}}
+                    onChangeText={text => onChangeText(text)}
+                    value={value}
+                    />
                 <Button label='Entrar'/>
-                <Button label='Cadastrar' />
-
-
             </View>
             <View style={styles.footer}>
             </View>
