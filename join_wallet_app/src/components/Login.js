@@ -44,7 +44,7 @@ export default () => {
             <View style={styles.content}>
                 <Image
                     style={styles.logo}
-                    source={require('../assets/icons/artwork-woman-poiting.png')}></Image>
+                    source={require('../assets/icons/artwork-woman-pointing.png') }></Image>
                 <TextInput
                     style={{ height: 40, borderColor: 'gray'}}
                     onChangeText={text => onChangeText(text)}

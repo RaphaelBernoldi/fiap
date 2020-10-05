@@ -36,10 +36,12 @@ const styles = StyleSheet.create({
 export default () => {
     
     return (
+        
         <View style={styles.container}>
             <View style={styles.header}>
             </View>
             <View style={styles.content}>
+                
                 <Image
                     style={styles.logoWelcome}
                     source={require('../assets/icons/artwark-guy-holding-paper.png')}></Image>
